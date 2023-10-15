@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "openai": "https://esm.sh/openai@3.3.0",
+    "std/server": "https://deno.land/std@0.192.0/http/server.ts",
+    "xhr_polyfill": "https://deno.land/x/xhr@0.1.0/mod.ts"
+  }
+}
