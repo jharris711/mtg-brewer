@@ -32,7 +32,6 @@ const handler = async (req: Request) => {
       headers: { 'Content-Type': 'application/json' },
     });
   } catch (err) {
-    console.error(err);
     return new Response(err.message, { status: 500 });
   }
 };
