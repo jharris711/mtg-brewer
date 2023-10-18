@@ -38,7 +38,11 @@ const handler = async (req: Request) => {
    * Loop over the deck and get the card data for each card.
    */
   for (const cardName of cardNames) {
-    // Use this to respect the guidelines set in the Scryfall docs
+    /**
+     * Use this to respect the rate-limiting guidelines set
+     * in the Scryfall docs.
+     * @see https://scryfall.com/docs/api
+     */
     await new Promise((resolve) => setTimeout(resolve, 500));
 
     const { data, error: getCardDataError } =
